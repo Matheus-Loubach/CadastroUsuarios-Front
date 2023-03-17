@@ -1,0 +1,15 @@
+.container_list {
+    display: flex;
+    justify-content: center;
+}
+
+.container_list p {
+    margin-right: 0.1%;
+    border-right: 1px solid black;
+}
+
+.container_list div {
+    background-color: antiquewhite;
+    margin-top: 1%;
+    width: 200px;
+}
