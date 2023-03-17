@@ -3,7 +3,7 @@ import '../ComponetsCSS/Register.css'
 
 
 const Register = () => {
-    
+
     const [user, setUser] = useState({
         nome: '',
         sobrenome: '',
@@ -12,6 +12,7 @@ const Register = () => {
         profissao: '',
     });
 
+    const [isChecked, setIsChecked] = useState(false);
     const [message, setmessage] = useState(false);
 
     const handleSubmit = async (e) => {
@@ -47,10 +48,13 @@ const Register = () => {
 
     };
 
+    const handleCheckbox = (e) => {
+        setIsChecked(e.target.checked);
+      };
 
     return (
         <div>
-            <form className='container_input' onSubmit={handleSubmit}>
+            <form className='container_input' >
                 <div>
                     <input
                         type="text"
@@ -100,13 +104,24 @@ const Register = () => {
                         required
                     />
                 </div>
+                <div>
+                    <label>
+                        <input
+                            type="checkbox"
+                            checked={isChecked}
+                            onChange={handleCheckbox}
+                            required
+                        />
+                        Aceite dos termos de uso e da política de privacidade
+                    </label>
+                </div>
+
                 <div className='bt'>
-                    <button type="submit">Enviar</button>
+                    <button onClick={(e) => handleSubmit(e)} disabled={!isChecked}  >Enviar</button>
                     <button onClick={() => handleReset()}>Reset</button>
                     {message ? <p className='message'>{message}</p> : <p className='messageErr'>{message}</p>}
                 </div>
-
-
+        
             </form>
         </div>
     )
