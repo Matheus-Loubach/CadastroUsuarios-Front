@@ -10,6 +10,8 @@ A aparência da aplicação é definida com o uso de módulos de CSS, que permit
 
 A exibição dos usuários cadastrados é feita por meio de uma tabela, que apresenta as informações de cada usuário em uma linha separada. A tabela é gerada dinamicamente, a partir dos dados obtidos do banco de dados.
 
+Link para o BACK: https://github.com/Matheus-Loubach/CadastroUsuarios-BACK
+
 # Para iniciar
 
 Entre na pasta: cd CadastroUsuarios-Front-main e Execute o comando: npm start
