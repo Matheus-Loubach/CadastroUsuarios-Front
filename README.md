@@ -8,7 +8,7 @@ Para o cadastro de usuários, o formulário exige as seguintes informações: no
 
 A aparência da aplicação é definida com o uso de módulos de CSS, que permitem estilos específicos para cada componente da aplicação. Isso torna a aplicação mais fácil de manter e modificar, pois os estilos estão encapsulados em cada componente.
 
-A exibição dos usuários cadastrados é feita por meio de uma tabela, que apresenta as informações de cada usuário em uma linha separada. A tabela é gerada dinamicamente, a partir dos dados obtidos do banco de dados ou de uma API.
+A exibição dos usuários cadastrados é feita por meio de uma tabela, que apresenta as informações de cada usuário em uma linha separada. A tabela é gerada dinamicamente, a partir dos dados obtidos do banco de dados.
 
 #Para inciar
 
