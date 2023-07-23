@@ -8,20 +8,23 @@ const ListUsers = () => {
 
     const [listUser, setListUser] = useState();
 
-    useEffect(() => {
-        async function data() {
-            try {
-                const response = await fetch(API_URL);
-                const json = await response.json();
-                setListUser(json);
-            } catch (error) {
-                console.log(error);
-            }
-        };
+    const Users = async () => {
 
-        data();
+        try {
+            const response = await fetch(API_URL);
+            const json = await response.json();
+            setListUser(json);
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
-    }, [listUser]);
+    if (!Users) {
+        return <div>Carregando Tabela...</div>
+    } else {
+        Users();
+    }
+
 
     return (
         <div>

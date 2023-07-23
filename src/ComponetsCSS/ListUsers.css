@@ -1,6 +1,7 @@
 .container_list {
     display: flex;
     justify-content: center;
+    margin-top: 2%;
 }
 
 .container_list p {
@@ -10,6 +11,5 @@
 
 .container_list div {
     background-color: antiquewhite;
-    margin-top: 1%;
     width: 200px;
 }
