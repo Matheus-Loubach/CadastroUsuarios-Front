@@ -4,10 +4,10 @@ import '../ComponetsCSS/ListUsers.css'
 
 const ListUsers = () => {
 
-    const API_URL = 'http://localhost:3000/api/users'
+    const API_URL = 'https://cadastro-usuarios-back-e9lj.vercel.app/api/users'
 
     const [listUser, setListUser] = useState();
- 
+
     useEffect(() => {
         async function data() {
             try {

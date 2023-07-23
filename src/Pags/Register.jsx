@@ -17,7 +17,7 @@ const Register = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const API_URL = "http://localhost:3000/api/register";
+        const API_URL = "https://cadastro-usuarios-back-e9lj.vercel.app/api/register";
 
         try {
             const response = await fetch(API_URL, {
